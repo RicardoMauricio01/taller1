@@ -13,7 +13,7 @@ app.use("/api/auth", require("./routes/auth"));
 
 // prueba
 app.get("/", (req, res) => {
-  res.send("Servidor funcionando 🚀");
+  res.send("Servidor corriendo perfectamente yuju");
 });
 
 // levantar servidor
