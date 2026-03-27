@@ -1,0 +1,18 @@
+<div style="max-width: 400px; margin: 40px auto; padding: 25px; border-radius: 15px; background: #f4f7f6; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-left: 5px solid #2c3e50;">
+  <h2 style="text-align: center; color: #2c3e50;">Iniciar Sesión</h2>
+  <p style="text-align: center; color: #7f8c8d; font-size: 0.9rem;">Ingresa tus credenciales de ingeniería</p>
+
+  <div style="margin-top: 20px; margin-bottom: 15px;">
+    <label style="display: block; font-weight: bold;">Correo Electrónico:</label>
+    <input type="email" [(ngModel)]="credenciales.email" name="email" placeholder="admin@email.com" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #bdc3c7;">
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <label style="display: block; font-weight: bold;">Contraseña:</label>
+    <input type="password" [(ngModel)]="credenciales.password" name="password" placeholder="****" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #bdc3c7;">
+  </div>
+
+  <button (click)="iniciarSesion()" style="width: 100%; padding: 12px; background: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s;">
+    Entrar al Programa
+  </button>
+</div>

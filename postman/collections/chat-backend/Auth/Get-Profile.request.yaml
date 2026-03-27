@@ -1,0 +1,21 @@
+$kind: http-request
+name: Get Profile
+method: GET
+url: '{{baseUrl}}/api/auth/perfil'
+order: 3000
+headers:
+  - key: Authorization
+    value: '{{token}}'
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status code is 200", function () {
+        pm.response.to.have.status(200);
+      });
+      pm.test("Response has id, nombre, email fields", function () {
+        const res = pm.response.json();
+        pm.expect(res).to.have.property("id");
+        pm.expect(res).to.have.property("nombre");
+        pm.expect(res).to.have.property("email");
+      });

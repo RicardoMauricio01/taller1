@@ -1,0 +1,22 @@
+<div style="max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+  <h2 style="text-align: center;">Registro de Usuario</h2>
+
+  <div style="margin-bottom: 10px;">
+    <label>Nombre:</label>
+    <input type="text" [(ngModel)]="nuevoUsuario.nombre" name="nombre" style="width: 100%; padding: 8px;">
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="nuevoUsuario.email" name="email" style="width: 100%; padding: 8px;">
+  </div>
+
+  <div style="margin-bottom: 20px;">
+    <label>Contraseña:</label>
+    <input type="password" [(ngModel)]="nuevoUsuario.password" name="password" style="width: 100%; padding: 8px;">
+  </div>
+
+  <button (click)="registrar()" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">
+    Registrar
+  </button>
+</div>
