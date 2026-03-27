@@ -1,0 +1,62 @@
+# ==========================================
+# Node
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ==========================================
+# Angular
+# ==========================================
+/frontend/dist/
+/frontend/tmp/
+/frontend/out-tsc/
+/frontend/.angular/
+/frontend/coverage/
+
+# ==========================================
+# Backend
+# ==========================================
+/backend/dist/
+/backend/coverage/
+
+# Variables de entorno (nunca subir al repo)
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# IDEs y editores
+# ==========================================
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# ==========================================
+# Sistema operativo
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Misc
+# ==========================================
+.sass-cache/
+/coverage
+testem.log
+/typings
+bazel-out/
+/libpeerconnection.log
+/connect.lock
