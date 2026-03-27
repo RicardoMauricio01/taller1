@@ -22,7 +22,10 @@ export class LoginComponent {
       next: (res: any) => {
         console.log('Respuesta backend:', res);
 
-        alert('¡Acceso concedido! Bienvenido al sistema.');
+        localStorage.setItem('token', res.token);
+        localStorage.setItem('usuario', JSON.stringify(res.usuario));
+
+        alert(`¡Acceso concedido! Bienvenido, ${res.usuario.nombre}`);
       },
       error: (err) => {
         console.error('Error:', err);

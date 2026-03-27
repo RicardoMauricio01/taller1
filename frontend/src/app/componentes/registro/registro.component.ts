@@ -19,7 +19,7 @@ export class RegistroComponent {
     this.authService.register(this.nuevoUsuario).subscribe({
       next: (res) => {
         console.log(res);
-        alert('Usuario ${this.} registrado');
+        alert(`Usuario ${this.nuevoUsuario.nombre} registrado`);
       },
       error: (err) => {
         console.error(err);
